@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+<LinearLayout
+    android:id="@+id/loadLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seeilm_logo"
+            android:padding="@dimen/padding_sides"
+            android:alpha="0.1"
+            />
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/fullscreen_text_size"
+            android:gravity="bottom"
+            android:padding="@dimen/padding_sides"
+            android:alpha="0.8"
+            android:singleLine="true"
+            android:text="@string/logo_string"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+
+        android:visibility="visible"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/somethingWrongTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="midagi läks valesti, kliki ekraanil"
+        android:gravity="center|top"
+        android:visibility="gone"
+        android:textSize="@dimen/small_text_size"
+        android:layout_centerHorizontal="true"/>
+
+
+        <ImageView
+            android:src="@drawable/mooncascade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/padding_sides"/>
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

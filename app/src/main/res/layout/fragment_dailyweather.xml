@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:id="@+id/nightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/fullscreen_text_size"
+            android:gravity="center"
+            android:layout_margin="@dimen/padding_sides"
+            android:alpha="0.2"
+            android:textColor="@color/black"
+            android:text="@string/night_background_string"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/nightLayout"
+            android:padding="@dimen/padding_sides"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+
+            <LinearLayout
+                android:id="@+id/nightTemperaturesLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/nightTempLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3">
+
+                    <com.lb.auto_fit_textview.AutoResizeTextView
+                        android:id="@+id/nightTempTextView"
+                        style="@style/night_text_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/resizeable_text_size"
+                        android:gravity="bottom"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nightTempMoreLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/nightTempDiffTextView"
+                        style="@style/night_text_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/small_text_size"
+                        android:gravity="center"/>
+
+                    <com.lb.auto_fit_textview.AutoResizeTextView
+                        android:id="@+id/nightTextTempTextView"
+                        style="@style/night_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_below="@id/nightTempDiffTextView"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nightMoreInfoLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/nightWindLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6">
+
+                    <TextView
+                        android:id="@+id/windText"
+                        style="@style/night_text_color"
+                        android:textSize="@dimen/small_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/wind_string"/>
+
+                    <TextView
+                        android:id="@+id/nightWindTextView"
+                        style="@style/night_text_color"
+                        android:textSize="@dimen/small_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/windText"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/nightPhenLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+
+
+                    <com.lb.auto_fit_textview.AutoResizeTextView
+                        android:id="@+id/nightPhenTextView"
+                        style="@style/night_text_color"
+                        android:textSize="@dimen/small_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:id="@+id/nightPhenImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/nightPhenTextView"
+                        android:layout_centerHorizontal="true"/>
+
+                    <Button
+                        android:id="@+id/nightMoreInfoButton"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/blue1"
+                        android:text="@string/more_info_string"
+                        android:background="@drawable/button_night_dot"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="@color/red">
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <com.lb.auto_fit_textview.AutoResizeTextView
+            android:id="@+id/dayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/fullscreen_text_size"
+            android:layout_margin="@dimen/padding_sides"
+            android:gravity="center"
+            android:alpha="0.2"
+            android:text="@string/day_background_string"/>
+
+        <LinearLayout
+            android:id="@+id/dayLayout"
+            android:padding="@dimen/padding_sides"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+
+            <LinearLayout
+                android:id="@+id/dayTemperaturesLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/dayTempLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3">
+
+                    <com.lb.auto_fit_textview.AutoResizeTextView
+                        android:id="@+id/dayTempTextView"
+                        style="@style/day_text_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/resizeable_text_size"
+                        android:gravity="bottom"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dayTempMoreLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/dayTempDiffTextView"
+                        style="@style/day_text_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/small_text_size"
+                        android:gravity="center"/>
+
+                    <com.lb.auto_fit_textview.AutoResizeTextView
+                        android:id="@+id/dayTextTempTextView"
+                        style="@style/day_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_below="@id/dayTempDiffTextView"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dayMoreInfoLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/dayWindLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6">
+
+                    <TextView
+                        android:id="@+id/dayWindText"
+                        style="@style/day_text_color"
+                        android:textSize="@dimen/small_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/wind_string"/>
+
+                    <TextView
+                        android:id="@+id/dayWindTextView"
+                        style="@style/day_text_color"
+                        android:textSize="@dimen/small_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dayWindText"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/dayPhenLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+
+
+                    <com.lb.auto_fit_textview.AutoResizeTextView
+                        android:id="@+id/dayPhenTextView"
+                        style="@style/day_text_color"
+                        android:textSize="@dimen/small_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/dayPhenImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/dayPhenTextView"
+                        android:layout_centerHorizontal="true"/>
+
+                    <Button
+                        android:id="@+id/dayMoreInfoButton"
+                        android:layout_width="@dimen/button_size"
+                        android:layout_height="@dimen/button_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/more_info_string"
+                        android:background="@drawable/button_day_dot"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            style="@style/padding_sides"
+            android:id="@+id/currentDayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:textColor="@color/lightBlack"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

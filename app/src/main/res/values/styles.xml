@@ -1,0 +1,32 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkBlue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="padding_sides">
+     <item name="android:paddingLeft">@dimen/padding_sides</item>
+     <item name="android:paddingRight">@dimen/padding_sides</item>
+    </style>
+
+
+
+
+
+    <style name="night_text_color">
+        <item name="android:textColor">@color/blue1</item>
+    </style>
+
+    <style name="day_text_color">
+        <item name="android:textColor">@color/darkBlue</item>
+    </style>
+
+</resources>

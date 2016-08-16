@@ -1,0 +1,27 @@
+Clear	Selge	bright_moon	sun_1
+Few clouds	Vähene pilvisus	partly_cloudy_night	partly_cloudy_day_1
+Variable clouds	Vahelduv pilvisus	partly_cloudy_night	partly_cloudy_day_1
+Cloudy with clear spells	Pilves selgimistega	partly_cloudy_night	partly_cloudy_day_1
+Cloudy	Pilves	clouds	clouds_1
+Light snow shower	Nõrk hooglumi	light_snow	light_snow_1
+Moderate snow shower	Mõõdukas hooglumi	snow	snow_1
+Heavy snow shower	Tugev hooglumi	snow	snow_1
+Light shower	Nõrk hoogvihm	light_rain	light_rain_1
+Moderate shower	Mõõdukas hoogvihm	intense_rain	intense_rain_1
+Heavy shower	Tugev hoogvihm	intense_rain	intense_rain_1
+Light rain	Nõrk vihm	light_rain	light_rain_1
+Moderate rain	Mõõdukas vihm	intense_rain	intense_rain_1
+Heavy rain	Tugev vihm	intense_rain	intense_rain_1
+Risk of glaze	Jäiteoht	icy	icy_1
+Light sleet	Nõrk lörtsisadu	sleet	sleet_1
+Moderate sleet	Mõõdukas lörtsisadu	sleet	sleet_1
+Light snowfall	Nõrk lumesadu	light_snow	light_snow_1
+Moderate snowfall	Mõõdukas lumesadu	snow	snow_1
+Heavy snowfall	Tugev lumesadu	snow	snow_1
+Snowstorm	Üldtuisk	snow_storm	snow_storm_1
+Drifting snow	Pinnatuisk	snow_storm	snow_storm_1
+Hail	Rahe	hail	hail_1
+Mist	Uduvine	fog_night	fog_day_1
+Fog	Udu	fog_night	fog_day_1
+Thunder	Äike	storm	storm_1
+Thunderstorm	Äikesevihm	storm_1	storm_1
